@@ -5,31 +5,22 @@
     text-align: center;
 }
 
-.square {
-    font-size: 80px;
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-collapse: collapse;
+table {
+    background-color: #c1e3de;  
+    border: 5px solid #c1e3de;
 }
 
 .square {
-  -webkit-border-top-left-radius: 1px;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 3px;
-  -webkit-border-bottom-left-radius: 4px;
-
-  -moz-border-radius-topleft: 1px;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 3px;
-  -moz-border-radius-bottomleft: 4px;
-
-  border-top-left-radius: 1px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 4px;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    padding:;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-collapse:;
 }
 
 .square:hover {
@@ -38,7 +29,7 @@
 }
 
 a {
-    background-color: #cccccc;
+    background-color: #c1e3de;
     color: #ffffff;
     width: 80px;
     padding: 10px;
@@ -58,4 +49,25 @@ a:hover {
 
 .selected > td {
     color: #cccccc;
+}
+
+.player1 {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    padding:;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+.player2 {
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    padding:;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    display: inline-block;
 }
