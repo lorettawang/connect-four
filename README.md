@@ -1,4 +1,16 @@
-<Your game's title>: A description of your game. Background info of the game and screenshots are a nice touch.
-Technologies Used: List of the technologies used.
-Getting Started: Installation instructions. For your game, this section will include the link to your hosted game's site.
-Next Steps: Unsolved problems and/or planned features.
+**Connect Four** 
+
+Connect Four is a game that uses a 6 by 7 grid display and includes 2 players. During each turn, a player places a token in one of the columns. The winner is the player who is able to place four tokens horizontally on the same row, vertically on the same column, or diagonally.
+
+**Technologies Used**
+HTML5
+CSS3
+JavaScript
+Developer Tools
+VS Code
+Bash
+GitHub
+
+**Getting Started**
+
+**Next Steps**
