@@ -15,7 +15,7 @@ Otherwise, if current player is token b,
     add token b
 
 Check if current squares below are empty
-If empty, reloop one row lower until square reaches to non-empty square
+If empty, reloop one row lower until square reaches to non-open square
 
 // Checking for wins (winning combinations)
 checkVerticalA (row, col)

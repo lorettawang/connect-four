@@ -38,6 +38,7 @@ body {
 
 .board {
     background: #457EBD;
+    width: 850px;
 }
 
 p {
@@ -69,5 +70,5 @@ token b {
 .reset {
     background-color: #DB6D4C;
     color: #F5D443;
-    
+
 }  
