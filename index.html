@@ -9,77 +9,29 @@
     <title>Project 1 - Connect Four</title>
 </head>
 <body>
-    <body onload="startGame();">
     <center>
-    <h1>Connect Four</h1>
-    <p>Connect Four is a two player game. During each turn, a player places a token in one of the columns. The winner is the player who is able to place four tokens horizontally on the same row, vertically on the same column, or diagonally.</p>
-    <p>Good luck!</p>
-    <br>
-        <table align=center>
-            <tbody>
-                    <tr class="row1">
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    </tr>
-                    <tr class="row2">
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    <tr class="row3">
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    <tr class="row4">
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    <tr class="row5">
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    <tr class="row6">
-                        <td id="s1" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s2" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s3" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s4" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s5" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s6" class="square" onclick="nextMove(this);">x</td>
-                        <td id="s7" class="square" onclick="nextMove(this);">x</td>
-                    </tr>
-                </tbody>
-            </table>   
-    </center>
+    <div class="game topHeader">
+        <h1>Connect Four</h1>
+        <p>Connect Four is a two player game. During each turn, a player places a token in one of the columns. The winner is the player who is able to place four tokens horizontally on the same row, vertically on the same column, or diagonally.</p>
+        <p>Good luck!</p>
+        <br>
+    </div>
+    <div class="board">
+        <div class="token a" data-row="0" data-col="0">x</div>
+        <div class="token b" data-row="0" data-col="1">x</div>
+        <div class="token" data-row="0" data-col="2">x</div>
+    </div>
 <br>
-<div id="message">Current Player, Turns and Winner Message</div>
-<br>
-<div class="player1">A</div>
-<div class="player2">B</div>
+<div class="game bottomFooter">
+    <p id="message">Current Player:</p>
+<div class="players">
+    <img class="lisa turn" src="http://i.imgur.com/SGhkY6Q.png" alt="lisa simpson">
+    <img class-"bart" src="http://i.imgur.com/EWR9h6x.png" alt="bart simpson">
+</div>
 <br>
 <br>
-<a href="javascript:startGame();">reset game</a>
+<button class="reset" type="button">reset game</button>
 <br>
-
 <script src="./js/main.js"></script>       
 </body>
 </html>

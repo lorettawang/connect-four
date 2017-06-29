@@ -1,73 +1,73 @@
 * {
     font-family: 'Poppins', sans-serif;
     font-size:;
+    color: #ffffff;
     text-transform: uppercase;
     text-align: center;
 }
 
-table {
-    background-color: #c1e3de;  
-    border: 5px solid #c1e3de;
+body {
+    background: url("http://i.imgur.com/nUhVBCJ.png");
+    background-repeat: no-repeat;
+    width: 850px;
+    height: 650px;
 }
 
-.square {
-    font-size: 40px;
-    width: 80px;
-    height: 80px;
-    padding:;
-    text-align: center;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background-color: #ffffff;
-    border-radius: 50%;
-    border-collapse:;
+.topHeader {
+    position: relative;
 }
 
-.square:hover {
-    background-color: #cccccc;
-    cursor: pointer;
+.bottomFooter {
+    margin: 0 auto;
 }
 
-a {
-    background-color: #c1e3de;
-    color: #ffffff;
-    width: 80px;
-    padding: 10px;
-    text-align: center;
-    margin: 16px auto;
-    border-radius: 25px;
-    text-decoration: none;
+.row {
+    display: block;
+    height: auto;
+    margin-left: 4%
 }
 
-a:hover {
-    cursor: pointer;
-}
-
-.selected {
-    background-color: #ffffff;
-}
-
-.selected > td {
-    color: #cccccc;
-}
-
-.player1 {
-    font-size: 40px;
-    width: 80px;
-    height: 80px;
-    padding:;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 50%;
+.token {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #F5D443;
+    border: 2px solid #DB6D4C;
     display: inline-block;
 }
-.player2 {
-    font-size: 40px;
-    width: 80px;
-    height: 80px;
-    padding:;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 50%;
-    display: inline-block;
+
+.board {
+    background: #457EBD;
 }
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #64B9EA;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.token a {
+    background-image: url(http://i.imgur.com/SGhkY6Q.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+token b {
+    background-image: url(http://i.imgur.com/EWR9h6x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.turn {
+    border: 3px solid #F5D443;
+    border-radius: 150px;
+}  
+
+.reset {
+    background-color: #DB6D4C;
+    color: #F5D443;
+    
+}  
