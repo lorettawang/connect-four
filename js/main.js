@@ -33,14 +33,14 @@ if (currentPlayer.name === 'lisa') {
     lisa.classList.remove('active');
     bart.classList.add('active');
     currentPlayer = players[1];
-var h2 = document.querySelector('h2');
-    h2.innerHTML = "It's Bart's turn!";
+var h3 = document.querySelector('h3');
+    h3.innerHTML = "It's Bart's turn!";
 } else {
     bart.classList.remove('active');
     lisa.classList.add('active');
     currentPlayer = players[0];
-var h2 = document.querySelector('h2');
-    h2.innerHTML = "It's Lisa's turn!";
+var h3 = document.querySelector('h3');
+    h3.innerHTML = "It's Lisa's turn!";
   }
 };
 
@@ -138,7 +138,7 @@ var checkRHorizontalB = function(row, col) {
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
-    var h2 = document.querySelector('h2');
+    var h3 = document.querySelector('h3');
     return gameWinner();
   } else if (row < 0 || row > 5 || col < 0 || col > 6) {
     count = 0;
@@ -293,10 +293,10 @@ var scanBoard = function(){
 
 var gameWinner = function() {
 "use strict";
-var h2 = document.querySelector('h2');
+var h3 = document.querySelector('h3');
 var active = document.querySelector('.active');
-// h2.innerHTML = active.classList[0] + " wins!";
-h2.innerHTML = currentPlayer.name + " wins!";
+// h3.innerHTML = active.classList[0] + " wins!";
+h3.innerHTML = currentPlayer.name + " wins! Ha-Ha!";
 board.removeEventListener('click', handleClick);
 return;
 };
@@ -304,8 +304,8 @@ return;
 var tieGame = function() {
 "use strict";
 board.removeEventListener('click', handleClick);
-var h2 = document.querySelector('h2');
-h2.innerHTML = "It's a tie game!";
+var h3 = document.querySelector('h3');
+h3.innerHTML = "It's a tie game! D'oh!";
 return;
 }
 
@@ -313,8 +313,8 @@ var newGame = function() {
 "use strict";
 var lisa = document.querySelector('.lisa');
 var bart = document.querySelector('.bart');
-var h2 = document.querySelector('h2');
-h2.innerHTML = "Bart gets to start!";
+var h3 = document.querySelector('h3');
+h3.innerHTML = "Bart gets to start! Eat my shorts!";
 lisa.classList.remove('active');
 bart.classList.add('active');
 currentPlayer = players[1];

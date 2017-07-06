@@ -1,6 +1,5 @@
 * {
     font-family: 'Poppins', sans-serif;
-    font-size:;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
@@ -22,7 +21,6 @@ body {
 .row {
     display: block;
     height: auto;
-    margin-left:;
 }
 
 .token {
