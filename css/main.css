@@ -7,10 +7,8 @@
 }
 
 body {
-    background: url("http://i.imgur.com/nUhVBCJ.png");
-    background-repeat: no-repeat;
-    width: 850px;
-    height: 650px;
+    background: #457EBD;
+    background-repeat: repeat;
 }
 
 .topHeader {
@@ -24,7 +22,7 @@ body {
 .row {
     display: block;
     height: auto;
-    margin-left: 4%
+    margin-left:;
 }
 
 .token {
@@ -32,13 +30,17 @@ body {
     height: 100px;
     border-radius: 100%;
     background: #F5D443;
-    border: 2px solid #DB6D4C;
     display: inline-block;
 }
 
 .board {
     background: #457EBD;
-    width: 850px;
+}
+
+.open {
+    background: #F5D443;
+    border: 3px solid #DB6D4C;
+    margin: 5px;
 }
 
 p {
@@ -50,19 +52,23 @@ p {
 
 }
 
-.token a {
+.lisa {
     background-image: url(http://i.imgur.com/SGhkY6Q.png);
     background-size: contain;
     background-repeat: no-repeat;
+    border: 3px solid #DB6D4C;
+    margin: 5px;
 }
 
-token b {
+.bart {
     background-image: url(http://i.imgur.com/EWR9h6x.png);
     background-size: contain;
     background-repeat: no-repeat;
+    border: 3px solid #DB6D4C;
+    margin: 5px;
 }
 
-.turn {
+.active {
     border: 3px solid #F5D443;
     border-radius: 150px;
 }  
@@ -70,5 +76,7 @@ token b {
 .reset {
     background-color: #DB6D4C;
     color: #F5D443;
-
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }  

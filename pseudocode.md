@@ -7,6 +7,8 @@ checkSquares (row, col)
 If square is open
 If square is not open
 
+// Player's turns
+playerTurn
 If current player is token a,
     remove the open square
     add token a
@@ -30,25 +32,49 @@ If the count is greater and 3, stop the loop (break)
 If the count is 4, return true
 Otherwise, return false
 
-checkHorizontalA (row, col)
+checkRHorizontalA (row, col)
 Start the count at 0
 If the count is greater and 3, stop the loop (break)
 If the count is 4, return true
 Otherwise, return false
 
-checkHorizontalB (row, col)
+checkRHorizontalB (row, col)
 Start the count at 0
 If the count is greater and 3, stop the loop (break)
 If the count is 4, return true
 Otherwise, return false
 
-checkDiagonalA (row, col)
+checkLHorizontalA (row, col)
 Start the count at 0
 If the count is greater and 3, stop the loop (break)
 If the count is 4, return true
 Otherwise, return false
 
-checkDiagonalB (row, col)
+checkLHorizontalB (row, col)
+Start the count at 0
+If the count is greater and 3, stop the loop (break)
+If the count is 4, return true
+Otherwise, return false
+
+checkRDiagonalA (row, col)
+Start the count at 0
+If the count is greater and 3, stop the loop (break)
+If the count is 4, return true
+Otherwise, return false
+
+checkRDiagonalB (row, col)
+Start the count at 0
+If the count is greater and 3, stop the loop (break)
+If the count is 4, return true
+Otherwise, return false
+
+checkLDiagonalA (row, col)
+Start the count at 0
+If the count is greater and 3, stop the loop (break)
+If the count is 4, return true
+Otherwise, return false
+
+checkLDiagonalB (row, col)
 Start the count at 0
 If the count is greater and 3, stop the loop (break)
 If the count is 4, return true
