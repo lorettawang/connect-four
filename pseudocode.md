@@ -16,7 +16,8 @@ Otherwise, if current player is token b,
     remove the open square
     add token b
 
-Check if current squares below are empty
+// Check if current squares below are empty
+checkSquares
 If empty, reloop one row lower until square reaches to non-open square
 
 // Checking for wins (winning combinations)

@@ -12,5 +12,7 @@ Bash
 GitHub
 
 **Getting Started**
+Click here to play the game: https://lorettawang.github.io/project-1-connect-four/
 
 **Next Steps**
+Unsolved problems and/or planned features.
