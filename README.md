@@ -2,7 +2,7 @@
 
 Connect Four is a game that uses a 6 by 7 grid display and includes 2 players. During each turn, a player places a token in one of the columns. The winner is the player who is able to place four tokens horizontally on the same row, vertically on the same column, or diagonally.
 
-<img src="http://i.imgur.com/rzKTA0d.png" title="connect four simpsons"/><
+<img src="http://i.imgur.com/rzKTA0d.png" title="connect four simpsons"/>
 
 ## **Technologies Used**
 HTML5
