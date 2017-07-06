@@ -47,6 +47,7 @@ body {
     background-repeat: no-repeat;
     border: 3px solid #DB6D4C;
     margin: 5px;
+    border-radius: 100%;
 }
 
 .bart {
@@ -55,6 +56,7 @@ body {
     background-repeat: no-repeat;
     border: 3px solid #DB6D4C;
     margin: 5px;
+    border-radius: 100%;
 }
 
 .active {
