@@ -3,34 +3,4 @@
 // for function goto if implements import in instanceof int interface long
 // native new null package private protected public return short static super
 // switch synchronized this throw throws transient true try typeof var
-// volatile void while with 
-
-function renderBoard()
-for var i = 1; i <= 42; i = i + 1) {
-    clearBox(i);
-}
-
-function checkSquares()
-
-function checkVerticalA()
-
-function checkVerticalB()
-
-function checkHorizontalA()
-
-function checkHorizontalB()
-
-function checkDiagonalA()
-
-function checkDiagonalB()
-
-function scanBoard()
-
-function gameWinner()
-
-function tieGame()
-
-function newGame()
-for var i = 1; i <= 42; i = i + 1) {
-    clearBox(i);
-}
+// volatile void while with
