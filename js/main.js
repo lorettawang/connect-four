@@ -33,11 +33,15 @@ if (currentPlayer.name === 'lisa') {
     lisa.classList.remove('active');
     bart.classList.add('active');
     currentPlayer = players[1];
+var h2 = document.querySelector('h2');
+    h2.innerHTML = "It's Bart's turn!";
 } else {
     bart.classList.remove('active');
     lisa.classList.add('active');
     currentPlayer = players[0];
-    }
+var h2 = document.querySelector('h2');
+    h2.innerHTML = "It's Lisa's turn!";
+  }
 };
 
 var renderBoard = function() {
@@ -50,7 +54,7 @@ for (var j = 0; j < 7; j++) {
 }
     html += '</div>';
 }
- board.innerHTML = html;
+board.innerHTML = html;
 };
 
 var handleClick = function(event) {
@@ -135,7 +139,6 @@ var checkRHorizontalB = function(row, col) {
   var i = (row*7 + col);
     if (count > 3) {
     var h2 = document.querySelector('h2');
-    h2.innerHTML = currentPlayer.name + " wins!";
     return gameWinner();
   } else if (row < 0 || row > 5 || col < 0 || col > 6) {
     count = 0;
@@ -290,9 +293,10 @@ var scanBoard = function(){
 
 var gameWinner = function() {
 "use strict";
-var h2 = document.querySelector("h2");
+var h2 = document.querySelector('h2');
 var active = document.querySelector('.active');
-h2.innerHTML = active.classList[0] + " wins!";
+// h2.innerHTML = active.classList[0] + " wins!";
+h2.innerHTML = currentPlayer.name + " wins!";
 board.removeEventListener('click', handleClick);
 return;
 };
@@ -310,7 +314,7 @@ var newGame = function() {
 var lisa = document.querySelector('.lisa');
 var bart = document.querySelector('.bart');
 var h2 = document.querySelector('h2');
-h2.innerHTML = "Players:";
+h2.innerHTML = "Bart gets to start!";
 lisa.classList.remove('active');
 bart.classList.add('active');
 currentPlayer = players[1];

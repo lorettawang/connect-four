@@ -43,15 +43,6 @@ body {
     margin: 5px;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    color: #64B9EA;
-    text-transform: uppercase;
-    text-align: center;
-    display: inline-block;
-
-}
-
 .lisa {
     background-image: url(http://i.imgur.com/SGhkY6Q.png);
     background-size: contain;
@@ -69,11 +60,12 @@ p {
 }
 
 .active {
-    border: 3px solid #F5D443;
+    border: 3px solid #DB6D4C;
     border-radius: 150px;
 }  
 
 .reset {
+    font-size: 20px;
     background-color: #DB6D4C;
     color: #F5D443;
     font-family: 'Poppins', sans-serif;
