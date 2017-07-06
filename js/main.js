@@ -295,7 +295,6 @@ var gameWinner = function() {
 "use strict";
 var h3 = document.querySelector('h3');
 var active = document.querySelector('.active');
-// h3.innerHTML = active.classList[0] + " wins!";
 h3.innerHTML = currentPlayer.name + " wins! Ha-Ha!";
 board.removeEventListener('click', handleClick);
 return;
@@ -303,9 +302,9 @@ return;
 
 var tieGame = function() {
 "use strict";
-board.removeEventListener('click', handleClick);
 var h3 = document.querySelector('h3');
 h3.innerHTML = "It's a tie game! D'oh!";
+board.removeEventListener('click', handleClick);
 return;
 }
 
