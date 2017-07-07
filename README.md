@@ -17,12 +17,17 @@ Connect Four is a game that uses a 6 by 7 grid display and includes 2 players. D
 Click here to play the game: [https://lorettawang.github.io/project-1-connect-four/](https://lorettawang.github.io/project-1-connect-four/)
 
 ## **Next Steps**
-Making it mobile-friendly + within scale
+Unsolved problems and/or planned features:
+* Making it mobile-friendly + within scale
 
-*Implement animation:*
+* *Implement animation:*
 
-* Tokens scrolling through all squares
+    * Tokens scrolling through all squares
 
-* Highlighting squares where winner has placed tokens
+    * Highlighting squares where winner has placed tokens
+
+* DRY code
+
+* Eloquent JS- writing "beautiful, effective code"
 
 <img src="https://media.giphy.com/media/sRWf3Oa9vW6Xu/giphy.gif" title="ralph gif"/>
