@@ -25,7 +25,10 @@ board.addEventListener('click', handleClick);
 button.addEventListener('click', newGame);
 
 /*----- functions -----*/
+
+// changes and selects player
 var playerTurn = function() {
+"use strict";
   var lisa = document.querySelector('.lisa');
   var bart = document.querySelector('.bart');
   if (currentPlayer.name === 'lisa') {
@@ -39,7 +42,9 @@ var playerTurn = function() {
   }
 };
 
+// board is created with innerHTML and runs addEventListeners
 var renderBoard = function() {
+"use strict";
   var html = '';
   for (var i = 0; i < 6; i++) {
     html += '<div class="row">';
@@ -51,7 +56,9 @@ var renderBoard = function() {
   board.innerHTML = html;
 };
 
+// originally added color based off player but when code was removed, the divs were broken
 var handleClick = function(event) {
+"use strict";
   if (event.target.classList.contains('open')) {
     var row = event.target.dataset.row;
     var col = event.target.dataset.col;
@@ -64,7 +71,12 @@ var handleClick = function(event) {
   }
 };
 
+// checks the bottom of the board using input from rows
+// is the square open or not open?
+// are the squares empty? re-loop down row until it is not at the bottom
+// adds class
 var checkSquares = function(row, col) {
+"use strict";
   var aToken = document.querySelectorAll('.token[data-row="' + row + '"]' );
   var aOneBelow = document.querySelectorAll('.token[data-row="' + (row + 1) + '"]' );
   if (aToken[col].classList.contains('open') && !aOneBelow[col]) {
@@ -90,7 +102,12 @@ var checkSquares = function(row, col) {
   }
 };
 
+
+// winning combinations start here (10 combos)
+// vertical scan - calls function with same arguments but with row decrements
+// when return true, stop loop
 var checkVerticalB = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -107,6 +124,7 @@ var checkVerticalB = function(row, col) {
 };
 
 var checkVerticalA = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -123,6 +141,7 @@ var checkVerticalA = function(row, col) {
 };
 
 var checkRHorizontalB = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -139,6 +158,7 @@ var checkRHorizontalB = function(row, col) {
 };
 
 var checkLHorizontalB = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -155,6 +175,7 @@ var checkLHorizontalB = function(row, col) {
 };
 
 var checkRHorizontalA = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -171,6 +192,7 @@ var checkRHorizontalA = function(row, col) {
 };
 
 var checkLHorizontalA = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
 if (count > 3) {
@@ -187,6 +209,7 @@ if (count > 3) {
 };
 
 var checkRDiagonalB = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
@@ -203,6 +226,7 @@ var checkRDiagonalB = function(row, col) {
 };
 
 var checkRDiagonalA = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
 if (count > 3) {
@@ -219,6 +243,7 @@ if (count > 3) {
 };
 
 var checkLDiagonalB = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
 if (count > 3) {
@@ -235,6 +260,7 @@ if (count > 3) {
 };
 
 var checkLDiagonalA = function(row, col) {
+"use strict";
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
 if (count > 3) {
@@ -250,7 +276,9 @@ if (count > 3) {
     return;
 };
 
+// scan the whole board and return all the winning combinations
 var scanBoard = function() {
+"use strict";
   var token = document.querySelectorAll('.token');
   for (var i = 0; i < token.length; i++) {
   var row = parseInt(i / 7);
@@ -270,21 +298,29 @@ var scanBoard = function() {
   if (spaces === 0) tieGame();
 };
 
+// if the count is greater than 3, the game will end and the winner is announced in innerHTML
 var gameWinner = function() {
+"use strict";
   var h3 = document.querySelector('h3');
   h3.innerHTML = currentPlayer.name + " wins! Ha-Ha!";
   board.removeEventListener('click', handleClick);
   return;
 };
 
+// when spaces open count is at 0, the game will end and a tie game is announced in innerHTML
+// original count of spaces is at 42
 var tieGame = function() {
+"use strict";
   board.removeEventListener('click', handleClick);
   var h3 = document.querySelector('h3');
   h3.innerHTML = "It's a tie game! Doh!";
   return;
 };
 
+// new game
+// board resets
 var newGame = function() {
+"use strict";
   var lisa = document.querySelector('.lisa');
   var bart = document.querySelector('.bart');
   var h3 = document.querySelector('h3');
