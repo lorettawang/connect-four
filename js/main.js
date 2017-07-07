@@ -300,7 +300,6 @@ var tieGame = function() {
   h3.innerHTML = "It's a tie game! Doh!";
   return;
 };
-console.log (tieGame);
 
 var newGame = function() {
 "use strict";
