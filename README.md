@@ -5,24 +5,24 @@ Connect Four is a game that uses a 6 by 7 grid display and includes 2 players. D
 <img src="http://i.imgur.com/rzKTA0d.png" title="connect four simpsons"/>
 
 ## **Technologies Used**
-HTML5
-
-CSS3
-
-JavaScript
-
-Developer Tools
-
-VS Code
-
-Bash
-
-GitHub
+* HTML5
+* CSS3
+* JavaScript
+* Developer Tools
+* VS Code
+* Bash
+* GitHub
 
 ## **Getting Started**
 Click here to play the game: [https://lorettawang.github.io/project-1-connect-four/](https://lorettawang.github.io/project-1-connect-four/)
 
 ## **Next Steps**
-Unsolved problems and/or planned features.
+Making it mobile-friendly + within scale
+
+*Implement animation:*
+
+* Tokens scrolling through all squares
+
+* Highlighting squares where winner has placed tokens
 
 <img src="https://media.giphy.com/media/sRWf3Oa9vW6Xu/giphy.gif" title="ralph gif"/>

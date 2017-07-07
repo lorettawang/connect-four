@@ -27,34 +27,30 @@ button.addEventListener('click', newGame);
 /*----- functions -----*/
 var playerTurn = function() {
 "use strict";
-var lisa = document.querySelector('.lisa');
-var bart = document.querySelector('.bart');
-if (currentPlayer.name === 'lisa') {
-    lisa.classList.remove('active');
-    bart.classList.add('active');
+  var lisa = document.querySelector('.lisa');
+  var bart = document.querySelector('.bart');
+  if (currentPlayer.name === 'lisa') {
     currentPlayer = players[1];
-var h3 = document.querySelector('h3');
+    var h3 = document.querySelector('h3');
     h3.innerHTML = "It's Bart's turn!";
-} else {
-    bart.classList.remove('active');
-    lisa.classList.add('active');
+    } else {
     currentPlayer = players[0];
-var h3 = document.querySelector('h3');
+    var h3 = document.querySelector('h3');
     h3.innerHTML = "It's Lisa's turn!";
   }
 };
 
 var renderBoard = function() {
 "use strict";
-var html = '';
-for (var i = 0; i < 6; i++) {
+  var html = '';
+  for (var i = 0; i < 6; i++) {
     html += '<div class="row">';
-for (var j = 0; j < 7; j++) {
-    html += '<div class="token open" data-row="' + i + '" data-col="' + j + '">' + '</div>';
-}
+    for (var j = 0; j < 7; j++) {
+      html += '<div class="token open" data-row="' + i + '" data-col="' + j + '">' + '</div>';
+    }
     html += '</div>';
-}
-board.innerHTML = html;
+  }
+  board.innerHTML = html;
 };
 
 var handleClick = function(event) {
@@ -76,25 +72,24 @@ var checkSquares = function(row, col) {
   var aToken = document.querySelectorAll('.token[data-row="' + row + '"]' );
   var aOneBelow = document.querySelectorAll('.token[data-row="' + (row + 1) + '"]' );
   if (aToken[col].classList.contains('open') && !aOneBelow[col]) {
-
     if (currentPlayer.name === 'lisa') {
       aToken[col].classList.remove('open');
       aToken[col].classList.add('lisa');
-      } else {
+    } else {
       aToken[col].classList.remove('open');
       aToken[col].classList.add('bart');
-      }
+    }
     return;
-    } else if (aToken[col].classList.contains('open') && aOneBelow[col].classList.contains('open') ) {
+  } else if (aToken[col].classList.contains('open') && aOneBelow[col].classList.contains('open') ) {
     return checkSquares(row + 1, col);
-    } else {
-      if (currentPlayer.name === 'lisa') {
-        aToken[col].classList.remove('open');
-        aToken[col].classList.add('lisa');
-    } else {
+  } else {
+    if (currentPlayer.name === 'lisa') {
       aToken[col].classList.remove('open');
-      aToken[col].classList.add('bart');
-      }
+      aToken[col].classList.add('lisa');
+  } else {
+    aToken[col].classList.remove('open');
+    aToken[col].classList.add('bart');
+  }
     return;
   }
 };
@@ -138,7 +133,6 @@ var checkRHorizontalB = function(row, col) {
   var token = document.querySelectorAll('.token');
   var i = (row*7 + col);
     if (count > 3) {
-    var h3 = document.querySelector('h3');
     return gameWinner();
   } else if (row < 0 || row > 5 || col < 0 || col > 6) {
     count = 0;
@@ -270,7 +264,7 @@ if (count > 3) {
     return;
 };
 
-var scanBoard = function(){
+var scanBoard = function() {
 "use strict";
   var token = document.querySelectorAll('.token');
   for (var i = 0; i < token.length; i++) {
@@ -293,36 +287,33 @@ var scanBoard = function(){
 
 var gameWinner = function() {
 "use strict";
-var h3 = document.querySelector('h3');
-var active = document.querySelector('.active');
-h3.innerHTML = currentPlayer.name + " wins! Ha-Ha!";
-board.removeEventListener('click', handleClick);
-return;
+  var h3 = document.querySelector('h3');
+  h3.innerHTML = currentPlayer.name + " wins! Ha-Ha!";
+  board.removeEventListener('click', handleClick);
+  return;
 };
 
 var tieGame = function() {
 "use strict";
-var h3 = document.querySelector('h3');
-h3.innerHTML = "It's a tie game! D'oh!";
-board.removeEventListener('click', handleClick);
-return;
-}
+  board.removeEventListener('click', handleClick);
+  var h3 = document.querySelector('h3');
+  h3.innerHTML = "It's a tie game! Doh!";
+  return;
+};
 
 var newGame = function() {
 "use strict";
-var lisa = document.querySelector('.lisa');
-var bart = document.querySelector('.bart');
-var h3 = document.querySelector('h3');
-h3.innerHTML = "Bart gets to start! Eat my shorts!";
-lisa.classList.remove('active');
-bart.classList.add('active');
-currentPlayer = players[1];
-spaces = 42;
-count = 0;
-renderBoard();
-board.addEventListener('click', handleClick);
-return;
-}
+  var lisa = document.querySelector('.lisa');
+  var bart = document.querySelector('.bart');
+  var h3 = document.querySelector('h3');
+  h3.innerHTML = "Bart gets to start! Eat my shorts!";
+  currentPlayer = players[1];
+  spaces = 42;
+  count = 0;
+  renderBoard();
+  board.addEventListener('click', handleClick);
+  return;
+};
 
 board.addEventListener('click', handleClick);
 button.addEventListener('click', newGame);

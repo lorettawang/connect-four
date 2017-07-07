@@ -23,63 +23,43 @@ If empty, reloop one row lower until square reaches to non-open square
 // Checking for wins (winning combinations)
 checkVerticalA (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkVerticalB (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkRHorizontalA (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkRHorizontalB (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkLHorizontalA (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkLHorizontalB (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
 
 checkRDiagonalA (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkRDiagonalB (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 checkLDiagonalA (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
+
 
 checkLDiagonalB (row, col)
 Start the count at 0
-If the count is greater and 3, stop the loop (break)
-If the count is 4, return true
-Otherwise, return false
+If the count is greater than 3, stop the loop (break)
 
 // Final scan
 scanBoard
